@@ -1,9 +1,10 @@
 #!/usr/bin/python3
-def return_value(tuple_v, idx):    
-    if idx >= len(tuple_v):
-        return 0
-    return tuple_v[idx]
+"""Adds 2 tuples"""
+
+
 def add_tuple(tuple_a=(), tuple_b=()):
-    a = return_value(tuple_a, 0) + return_value(tuple_b, 0)
-    b = return_value(tuple_a, 1) + return_value(tuple_b, 1)
-    return (a, b,)
+    new_tuple = ()
+    tuple_1 = tuple_a + (0, 0)
+    tuple_2 = tuple_b + (0, 0)
+    new_tuple = tuple_1[0] + tuple_2[0], tuple_1[1] + tuple_2[1]
+    return new_tuple 

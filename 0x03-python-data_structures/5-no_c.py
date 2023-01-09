@@ -1,8 +1,7 @@
 #!/usr/bin/python3
+"""Removes all characters c and C from string"""
+
+
 def no_c(my_string):
-    result = ''
-    for letter in my_string:
-        if letter == 'c' or letter == 'C':
-            continue
-        result = result + letter
-    return 
+    new_string = my_string.translate({ord(i): None for i in 'cC'})
+    return  
