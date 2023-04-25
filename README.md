@@ -1,1 +1,1 @@
- Hello world 
+Procect on scopes, objects and closures.
