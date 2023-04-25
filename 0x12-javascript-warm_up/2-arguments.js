@@ -1,10 +1,12 @@
 #!/usr/bin/node
-// Handle arguments with Javascript
+const count = process.argv.length;
 
-if (process.argv.length < 3) {
-  console.log('No argument');
-} else if (process.argv.length === 3) {
-  console.log('Argument found');
+let myVar;
+if (count === 2) {
+  myVar = 'No argument';
+} else if (count === 3) {
+  myVar = 'Argument found';
 } else {
-  console.log('Arguments found');
+  myVar = 'Arguments found';
 }
+console.log(myVar);

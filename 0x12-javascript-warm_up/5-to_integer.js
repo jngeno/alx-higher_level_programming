@@ -1,11 +1,10 @@
 #!/usr/bin/node
-// Handle arguments with Javascript
+const num = Math.floor(Number(process.argv[2]));
 
-let parsed = parseInt(process.argv[2]);
-
-if (parsed) {
-  parsed = 'My number: ' + parsed;
-  console.log(parsed);
+let myVar;
+if (isNaN(num)) {
+  myVar = 'Not a number';
 } else {
-  console.log('Not a number');
+  myVar = `My number: ${num}`;
 }
+console.log(myVar);

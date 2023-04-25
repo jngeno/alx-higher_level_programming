@@ -1,10 +1,9 @@
 #!/usr/bin/node
-// Handle arguments with Javascript
 
-const arg = process.argv[2];
-
-if (arg) {
-  console.log(arg);
+let myVar;
+if (typeof process.argv[2] === 'undefined') {
+  myVar = 'No argument';
 } else {
-  console.log('No argument');
+  myVar = process.argv[2];
 }
+console.log(myVar);
